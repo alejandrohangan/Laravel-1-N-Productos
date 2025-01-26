@@ -15,9 +15,9 @@
     @foreach($products as $product)
     @php
     $color_stock = match (true) {
-    $product->stock >= 0 && $product->stock <= 10=> 'text-red-400', // Rojo
-        $product->stock > 10 && $product->stock <= 30=> 'text-orange-500', // Naranja
-            $product->stock > 30 => 'text-green-600', // Verde
+    $product->stock >= 0 && $product->stock <= 10=> 'text-red-400',
+        $product->stock > 10 && $product->stock <= 30=> 'text-orange-500',
+            $product->stock > 30 => 'text-green-600',
             };
             @endphp
             <div class="bg-white rounded-lg shadow-sm overflow-hidden">

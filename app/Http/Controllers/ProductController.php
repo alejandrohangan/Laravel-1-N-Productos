@@ -93,7 +93,7 @@ class ProductController extends Controller
             'descripcion' => ['required', 'string', 'min:5', 'max:100'],
             'imagen' => ['image', 'max:2048'],
             'category_id' => ['required', 'exists:categories,id'],
-            'stock' => ['required', 'integer', 'min:0', 'max:10000'], // Ajusta el rango según tus necesidades
+            'stock' => ['required', 'integer', 'min:0', 'max:10000'], 
         ];        
     }
 }

@@ -8,7 +8,7 @@
     <div class="bg-white rounded-lg">
         <form method="POST" action="{{ route('products.update', $product) }}" class="space-y-8" enctype="multipart/form-data">
             @csrf
-            @method('PUT') <!-- Asegura que el método sea PUT para actualizar -->
+            @method('PUT')
 
             <!-- Name Field -->
             <div class="space-y-2">
